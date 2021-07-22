@@ -46,7 +46,7 @@ class RandomNumberGenerator extends React.Component {
                 <button type="submit" onClick={this.handleBtnClick}>Generate Random Number</button>
                 <RandomGenerator minMax={[this.state.userMinSubmit, this.state.userMaxSubmit]} clickCount={this.state.clickCount}/>
                 <hr></hr>
-                <p><strong>Created by Ben FCB Porter using the React JS framework; styling not yet added.</strong></p>
+                <p><strong>Created by Ben FCB Porter using the React JS framework; styling will be added later.</strong></p>
             </div>
         );
     };
