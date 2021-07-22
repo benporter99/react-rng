@@ -21,11 +21,17 @@ class RandomGenerator extends React.Component {
                 <div>
                     <h1>Min is {min === max ? "equal to" : "larger than"} max - cannot calculate random number with these boundaries.</h1>
                 </div>
-            )
+            );
+        } else if (min % 1 != 0 || max % 1 != 0) {
+            return (
+                <div>
+                    <h1>Sorry, you can only enter integers (for now...)!</h1>
+                </div>
+            );
         } else {
-
+           
             const randomNum = Math.floor((Math.random() * (max - min + 1)) + min)
-
+            
             return (
                 <div>
                     <h1>The random number between {min} and {max} is: {randomNum}</h1>
