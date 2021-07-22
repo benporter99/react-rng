@@ -1,9 +1,9 @@
 import React from 'react';
 
 class RandomGenerator extends React.Component {
-    constructor(props) {
+    /* constructor(props) {
         super(props);
-    }
+    } */
 
     shouldComponentUpdate(nextProps) {
         if (this.props.clickCount !== nextProps.clickCount) {
